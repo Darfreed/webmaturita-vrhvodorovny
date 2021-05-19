@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <title>Vrh vodorovný</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="jumbotron text-dark text-center">
+        <h1 class="display-3">Vrh vodorovný</h1>
+    </header>
+    <main class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="img/vrh_vodorovny.jpg">
+        </div>
+        <div class="col-lg-6">
+            <h3 class="text-center">Proměnné</h3>
+            <ul>
+                <li><b>v<sub>0</sub></b> = počáteční rychlost</li>
+                <li><b>g</b> = tíhové zrychlení</li>
+                <li><b>v</b> = dopadová rychlost</li>
+                <li><b>t</b> = čas</li>
+                <li><b>h</b> = výška</li>
+            </ul>
+        </div>
+    </div>
+    <h2 class="text-center">Délka vrhu a dopadová rychlost</h2>
+        <form>
+            <div id="stylzrychleni" class="row bg-secondary">
+                <div class="col-sm-6">
+                    <label>Tíhové zrychlení: <b id="g">9.81</b> m/s<sup>2</sup></label>
+                </div>
+                <div id="radio" class="col-sm-6">
+                    <input type="radio" id="zeme" name="zrychleni" value="9.81" checked="checked">
+                    <label>Země</label>
+                    <input type="radio" id="mesic" name="zrychleni" value="1.62">
+                    <label>Měsíc</label>
+                    <input type="radio" id="mars" name="zrychleni" value="3.72">
+                    <label>Mars</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label>Zadejte počáteční rychlost vrhu:</label>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="number" id="rychlost" name="rychlost" min="0" value="30">
+                        </div>
+                        <div class="col-sm-6">
+                            <select id="rychlost_jednotky" name="rychlost_jednotky">
+                                <option value="ms">m/s</option>
+                                <option value="kmh">km/hod</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label>Zadejte výšku vrhu:</label>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="number" id="vyska" name="vyska" min="0" value="5">
+                        </div>
+                        <div class="col-sm-6">
+                            <label>m</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+
+                </div>
+                <div class="col-sm-6">
+                    <button id="button" type="button" class="btn btn-primary">Spočítat</button>
+                </div>
+            </div>
+        </form>
+        <p id="vysledek">Délka vodorovného vrhu = <b>30.29 m</b>, rychlost při dopadu = <b>31.59 m/s</b></p>
+    </main>
+    <footer class="bg-dark text-white text-center">
+        <p>&copy 2021 - SŠPU Opava - autor: Marek Schwan</p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/function.js"></script>
+  </body>
+</html>

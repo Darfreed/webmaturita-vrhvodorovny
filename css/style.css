@@ -1,0 +1,49 @@
+.jumbotron {
+    background-color: pink;
+}
+
+h2{
+    background-color: darkslateblue;
+    color: white;
+    text-transform:uppercase;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+h3{
+    color: darkslateblue;
+}
+
+footer{
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+#stylzrychleni{
+    color: white;
+    margin:0;
+}
+
+.row{
+    margin:0;
+}
+
+label{
+    margin:1rem 1rem 1rem 0;
+}
+
+input#rychlost, input#vyska, select{
+    width: 100%;
+    margin: 1rem;
+}
+
+img{
+    width: 100%;
+}
+
+#vysledek{
+    margin-top: 1rem;
+    background-color:turquoise;
+    color: teal;
+    padding: 1rem;
+}
